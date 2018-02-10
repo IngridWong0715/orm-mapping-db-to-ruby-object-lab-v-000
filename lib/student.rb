@@ -41,11 +41,8 @@ class Student
     all_10th.slice(0..(num-1))
   end
 
-  def self.first_student_in_grade_10(num)
-    self.all.select do |student|
-      student.grade == "10"
-    end.first
-
+  def self.first_student_in_grade_10
+    self.first_X_students_in_grade_10(1)
   end
 
 
