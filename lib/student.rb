@@ -29,6 +29,8 @@ class Student
   end
 
   def self.students_below_12th_grade
+    self.all.select do |student|
+      student.grade.to_i < 12
   end
 
   def self.find_by_name(name)
