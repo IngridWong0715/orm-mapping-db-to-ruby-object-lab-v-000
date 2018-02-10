@@ -38,6 +38,7 @@ class Student
     all_10th = self.all.select do |student|
       student.grade == "10"
     end
+    all_10th.slice(0..(num-1))
   end
 
 
