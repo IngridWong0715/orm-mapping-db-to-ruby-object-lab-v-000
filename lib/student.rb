@@ -34,7 +34,7 @@ class Student
     end
   end
 
-  def self.first_X_students_in_grade_10(num)
+  def self.first_X_students_in_grade_10(grade)
     all_10th = self.all.select do |student|
       student.grade == "10"
     end
