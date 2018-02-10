@@ -47,7 +47,7 @@ class Student
 
   def self.all_students_in_grade_X(grade)
     self.all.select do |student|
-      student.grade == grade
+      student.grade.to_i == grade
     end
   end
 
