@@ -45,7 +45,7 @@ class Student
     self.all.select do |student|
       student.grade == "10"
     end.first
-    
+
   end
 
 
