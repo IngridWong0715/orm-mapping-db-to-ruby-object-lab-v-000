@@ -34,7 +34,7 @@ class Student
     end
   end
 
-  def self.first_X_students_in_grade_10(nun)
+  def self.first_X_students_in_grade_10(num)
     all_10th = self.all.select do |student|
       student.grade == "10"
     end
@@ -46,6 +46,7 @@ class Student
   end
 
   def self.all_students_in_grade_X(grade)
+  end
 
 
   def self.find_by_name(name)
